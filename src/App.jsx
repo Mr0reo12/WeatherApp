@@ -26,7 +26,7 @@ function App() {
   const [location, setLocation] = useState("Ren");
   const [inputValue, setInputValue] = useState("");
   const [setAnimate] = useState(false);
-  const [loading, SetLoading] = useState(false);
+  const [, SetLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
 
@@ -116,6 +116,7 @@ function App() {
  //Affichage Icons selon le temp//
  let icon;
  
+ // eslint-disable-next-line default-case
  switch (data.weather[0].main)
  {
   case "Clouds":
